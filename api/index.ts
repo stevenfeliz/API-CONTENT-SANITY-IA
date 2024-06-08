@@ -1,8 +1,9 @@
 import "dotenv/config"
 import express from "express"
 import cors from "cors"
-import {router} from "./routes/index"
-import { dbConnect } from "./config/mongo"
+import { router } from "../src/routes"
+import { dbConnect } from "../src/config/mongo"
+
 
 
 const PORT = process.env.PORT || 3001
@@ -18,50 +19,3 @@ app.use(router)
 dbConnect().then((res)=>console.log(res))
 
 app.listen(PORT,()=>console.log(`Escuchando en http://localhost:${PORT}`))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
