@@ -20,6 +20,7 @@ dbConnect().then((res)=>console.log(res))
 app.listen(PORT,()=>console.log(`Escuchando en http://localhost:${PORT}`))
 
 
+export default app
 
 
 
