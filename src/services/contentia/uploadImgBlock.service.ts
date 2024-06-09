@@ -46,6 +46,7 @@ export const uploadImgBlocksService = async ({slugName}:Props) => {
                 
                 if (data.coverImage.src) {
                     const idImdsageSanity = await UploadImageByUrl(data.coverImage.src)
+                    
 
                     coverImageid = idImdsageSanity._id
                 }

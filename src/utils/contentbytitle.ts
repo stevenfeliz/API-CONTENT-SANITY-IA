@@ -46,15 +46,15 @@ export const contentByTitleService = async (opts: Props) => {
         const penultimoParrafo = parrafos.eq(-2);
         penultimoParrafo.after(`<iframe width="560" height="315" src="${youtubeLink.videoUrl}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`)
 
-        const texto = await googleTranslate(
-            {
-               text:h1,
-               target:[`${opts.imageLanguage}`]
-            }
-         )
+        // const texto = await googleTranslate(
+        //     {
+        //        text:h1,
+        //        target:[`${opts.imageLanguage}`]
+        //     }
+        //  )
 
 
-        const imagenes = await googleImageUrl(texto)
+        const imagenes = await googleImageUrl(h1)
 
 
 

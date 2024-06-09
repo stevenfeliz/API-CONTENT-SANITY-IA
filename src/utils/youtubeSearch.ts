@@ -1,5 +1,5 @@
-// import { chromium } from "playwright";
-import {chromium} from 'playwright-chromium'
+import { chromium } from "playwright";
+
 import axios from "axios";
 import { youtubeSearchInterface } from "../interfaces/youtubeSearch.interface";
 

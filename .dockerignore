@@ -1,0 +1,20 @@
+# Ignorar node_modules ya que las dependencias se instalarán en el contenedor
+node_modules
+
+# Ignorar logs
+npm-debug.log
+
+# Ignorar archivos de configuración locales
+
+.DS_Store
+.env
+# Ignorar el directorio de salida de TypeScript (será generado dentro del contenedor)
+dist
+
+# Ignorar el propio Dockerfile y el archivo .dockerignore
+Dockerfile
+.dockerignore
+
+# Ignorar archivos de test y coverage (si no son necesarios en producción)
+coverage
+tests
