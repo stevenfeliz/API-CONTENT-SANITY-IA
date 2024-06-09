@@ -10,7 +10,7 @@ export const googleImageUrl = async (title: string): Promise<string[]> => {
     await page.waitForLoadState();
     await page.getByLabel('Buscar', { exact: true }).waitFor({ state: 'visible', timeout: 8000 }).then(async()=> await page.getByLabel('Buscar', { exact: true }).click()).catch(() => null)
     await page.getByLabel('Search', { exact: true }).waitFor({ state: 'visible', timeout: 8000 }).then(async()=> await page.getByLabel('Search', { exact: true }).click()).catch(() => null)
-
+    
     await page.getByLabel('Buscar con Google', { exact: true }).waitFor({ state: 'visible', timeout: 8000 }).then(async() => await page.getByLabel('Buscar con Google').click()).catch(()=>null)
     await page.getByLabel('Google Search', { exact: true }).waitFor({ state: 'visible', timeout: 8000 }).then(async() => await page.getByLabel('Google Search').click()).catch(()=>null)
 
