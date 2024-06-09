@@ -1,4 +1,5 @@
-import { chromium } from "playwright";
+// import { chromium } from "playwright";
+import {chromium} from 'playwright-chromium'
 
 export const googleImageUrl = async (title: string): Promise<string[]> => {
 
